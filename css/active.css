@@ -1,0 +1,5 @@
+/*-------------------ACTIVE--------------*/
+.main-btn:active {    
+	box-shadow: 0 0 25px #ffd277, 0 0 50px #ffd277, 0 0 30px #ffd277, 0 0 20px #ffd277;
+	background-position: right;
+}

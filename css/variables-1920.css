@@ -1,0 +1,86 @@
+@media (max-width: 480px) {
+    :root {
+    }
+
+}
+@media (min-width: 481px) and (max-width: 1023.98px) {
+	:root {
+    }
+
+}
+@media (min-width: 1024px) and (max-width: 1919.98px) {
+	:root {
+		--font-size-h1: 55px;
+		--font-size-h2: 48px;
+		--font-size-h3: 22px;
+		--font-size-h4: 21px;
+		--font-size-h5: 20px;
+		--font-size-h6: 19px;
+		--font-size-body: 18px;	
+		--font-size-10xl: 40px;
+		--font-size-9xl: 38px;
+		--font-size-8xl-5: 37px;
+		--font-size-8xl: 36px;
+		--font-size-7xl: 34px;
+		--font-size-6xl: 32px;
+		--font-size-5xl: 30px;
+		--font-size-4xl: 28px;
+		--font-size-3xl: 26px;	
+		--font-size-2xl: 24px;
+		--font-size-xl: 22px;
+		--font-size-lg: 20px;
+		--font-size-2md: 18px;
+		--font-size-md: 16px;
+		--font-size-sm: 14px;
+		--font-size-xs: 13px;
+		--font-size-2xs: 12px;
+		--font-size-3xs: 11px;
+		--font-size-4xs: 10px;
+		--font-size-5xs: 9px;
+		--font-size-6xs: 8px;
+		--font-size-7xs: 7px;
+
+		--font-great: 24px;
+		--font-biggest: 22px;
+		--font-big: 20px;
+		--font-medium: 18px;
+		--font-normal: 16px;
+		--font-small: 14px;
+		--font-default: 18px;
+	}
+
+}
+@media (min-width: 1920px) {
+	:root {
+      --font-size-h1: 55px;
+		--font-size-h2: 48px;
+		--font-size-h3: 22px;
+		--font-size-h4: 21px;
+		--font-size-h5: 20px;
+		--font-size-h6: 19px;
+		--font-size-body: 18px;	
+		--font-size-10xl: 40px;
+		--font-size-9xl: 38px;
+		--font-size-8xl-5: 37px;
+		--font-size-8xl: 36px;
+		--font-size-7xl: 34px;
+		--font-size-6xl: 32px;
+		--font-size-5xl: 30px;
+		--font-size-4xl: 28px;
+		--font-size-3xl: 26px;	
+		--font-size-2xl: 24px;
+		--font-size-xl: 22px;
+		--font-size-lg: 20px;
+		--font-size-2md: 18px;
+		--font-size-md: 16px;
+		--font-size-sm: 14px;
+		--font-size-xs: 13px;
+		--font-size-2xs: 12px;
+		--font-size-3xs: 11px;
+		--font-size-4xs: 10px;
+		--font-size-5xs: 9px;
+		--font-size-6xs: 8px;
+		--font-size-7xs: 7px;
+   }
+
+}

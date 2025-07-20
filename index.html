@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Schein Chess Club - сайт шахматной школы для детей и взрослых">
+	<meta name="keywords" content="keywords">
+	<link rel="shortcut icon" href="img/favicon.svg" type="image/svg+xml">
+	<link rel="shortcut icon" href="img/favicon.webp" type="image/webp">
+	<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+	<link rel="preload" as="image" href="img/parallax-img.png">
+	<!-- <link rel="stylesheet" href="css/libs.min.css"> -->
+	<!-- <link rel="stylesheet" href="css/style.min.css"> -->
+	<link rel="stylesheet" href="css/style.css">
+	<title>Schein Chess Club</title>
+</head>
+
+<body>
+	<div class="body-container">
+		<header class="header">
+			<div class="wrapper">
+				<div class="header__block flex-fl_row-fl_between">
+					<div class="header__block-logo flex-row">
+						<a href="/">
+							<img src="img/logo.png" alt="Schein Chess Club">
+						</a>
+					</div>
+					<div class="header__column-menu flex-row">
+						<button type="button" class="burger-btn not-desktop" id="burger-button"
+							element="burger-menu"><span></span></button>
+						<nav class="header__nav flex-fl_row-fl_between" data-burger-menu>
+							<ul class="header__links-list flex-row">
+								<li class="header__links-item">
+									<a href="/">Главная</a>
+								</li>
+								<li class="header__links-item">
+									<a href="/about">О клубе Шеиных</a>
+								</li>
+								<li class="header__links-item">
+									<a href="/programs">Программы клуба</a>
+								</li>
+								<li class="header__links-item">
+									<a href="/coaches">Наши тренеры</a>
+								</li>
+								<li class="header__links-item">
+									<a href="/tournaments">Турниры</a>
+								</li>
+							</ul>
+							<div class="header__callback">
+								<div class="header__callback-block flex-row">
+									<a class="header__tel callback-tel button" href="tel:+79990000000">
+										<span>+7 (999) 000-00-00</span>
+									</a>
+									<button type="button" class="header__btn callback-btn button" popup-open="popup-callback">
+										<span>Заказать звонок</span>
+									</button>
+								</div>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="main-container">
+			<section class="main-promo">
+				<div class="wrapper">
+					<div class="main-promo__block flex-row">
+						<div class="bg-shape bg-shape--01 filter-bg"></div>
+						<div class="bg-shape bg-shape--02 filter-bg"></div>
+						<div class="main-promo__content">
+							<h1 class="title">
+								<span>Шахматный клуб Шеин </span><span>для детей и взрослых</span>
+							</h1>
+							<p><span>Клуб основан семьей Шеиных — профессиональными </span><span>шахматистами и педагогами в
+									нескольких поколениях. </span><span>Предлагается авторская методика занятий </span><span>и
+									сопровождения, объединяющая традиции
+									семейного </span><span>воспитания и профессиональной шахматной подготовки.</span></p>
+							<button type="button" class="button main-btn" popup-open="popup-order">
+								<span>Записаться на занятие</span>
+							</button>
+						</div>
+						<div class="main-promo__img flex-fl_center" itemscope="" itemtype="http://schema.org/ImageObject">
+							<picture>
+								<!-- <source srcset="/img/chess-main-m.webp" media="(max-width: 480px)"
+									type="image/webp">
+								<source srcset="/img/chess-main-m.png" media="(max-width: 480px)"> -->
+								<!-- <source srcset="img/chess-main.webp" type="image/webp"> -->
+								<img src="img/chess-main.jpg" alt="Сайт шахматной школы" loading="lazy" itemprop="contentUrl">
+							</picture>
+						</div>
+					</div>
+				</div>
+				<div class="ribbons">
+					<div class="ribbon ribbons__item flex-fl_center">
+						<div class="ribbon__wrapper flex-fl_between">
+							<p>Турниры</p>
+							<p>Индивидуальные занятия</p>
+							<p>Schein Chess Club</p>
+							<p>Для детей и взрослых</p>
+							<p>Программы клуба</p>
+						</div>
+					</div>
+					<div class="ribbon-2 ribbons__item flex">
+					</div>
+				</div>
+			</section>
+			<section class="advantages">
+				<div class="wrapper">
+					<div class="advantages__block flex-fl_column-fl_center">
+						<div class="bg-shape bg-shape--01 filter-bg"></div>
+						<div class="bg-shape bg-shape--02 filter-bg"></div>
+						<h2 class="advantages__title title">Наши преимущества</h2>
+						<div class="advantages__list flex-row">
+							<div class="advantages__item flex-column">
+								<div class="advantages__header flex-row">
+									<div class="advantages__img">
+									</div>
+									<h3 class="advantages__subtitle">
+										<span>Семейная </span><span>преемственность</span>
+									</h3>
+								</div>
+								<p class="advantages__desc">
+									<span>Знания, передающиеся из поколения в поколение, — это традиция, когда любовь к игре и
+										мастерство наследуются детьми от родителей. Благодаря этому опыт и стратегии не теряются,
+										а развиваются, укрепляя связь между поколениями и создавая прочный фундамент для будущих
+										чемпионов.</span>
+								</p>
+							</div>
+							<div class="advantages__item flex-column">
+								<div class="advantages__header flex-row">
+									<div class="advantages__img">
+									</div>
+									<h3 class="advantages__subtitle">
+										<span>Индивидуальный </span><span>подход</span>
+									</h3>
+								</div>
+								<p class="advantages__desc">
+									<span>Учет особенностей участников клуба. Вы получаете внимание,
+										соответствующее
+										вашему уровню, возрасту и целям. Мы подстраиваемся под особенности мышления, темп освоения
+										материала и
+										личные предпочтения, чтобы сделать обучение эффективным и увлекательным для каждого
+										игрока.</span>
+								</p>
+							</div>
+							<div class="advantages__item flex-column">
+								<div class="advantages__header flex-row">
+									<div class="advantages__img">
+									</div>
+									<h3 class="advantages__subtitle">
+										<span>Турнирное </span><span>сопровождение</span>
+									</h3>
+								</div>
+								<p class="advantages__desc">
+									<span>Подготовка к соревнованиям включает планомерную работу над стратегией и анализом
+										партий. Мы помогаем участникам выработать тактику, улучшить
+										навыки игры в условиях ограниченного времени и приобрести уверенность для успешного
+										выступления на турнирах любого уровня. </span>
+								</p>
+							</div>
+							<div class="advantages__item flex-column">
+								<div class="advantages__header flex-row">
+									<div class="advantages__img">
+									</div>
+									<h3 class="advantages__subtitle">
+										<span>Квалифицированные </span><span>наставники</span>
+									</h3>
+								</div>
+								<p class="advantages__desc">
+									<span>Мы — компетентные тренеры и мастера своего дела, имеющие высокий уровень игры,
+										педагогическое образование и успешный опыт подготовки учеников. Мы эффективно передаем
+										знания, объясняем сложное просто и находим индивидуальный подход
+										к каждому шахматисту, независимо от возраста.</span>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="whom">
+				<div class="whom__bg">
+					<div class="wrapper">
+						<div class="whom__block flex-fl_column-fl_center">
+							<h2 class="whom__title title">Для кого?</h2>
+							<p class="whom__subtitle">Шахматы доступны для всей семьи и всех возрастов!</p>
+							<div class="whom__list flex-column">
+								<div class="whom__item flex-row">
+									<div class="whom__img flex-fl_center" itemscope="" itemtype="http://schema.org/ImageObject">
+										<picture>
+											<img src="img/whom-kids.png" alt="Шахматы для детей" loading="lazy"
+												itemprop="contentUrl">
+										</picture>
+									</div>
+									<div class="whom__text-content flex-column">
+										<h3 class="whom__heading"><span>Шахматы для детей</span></h3>
+										<p class="whom__desc"><span>Наши занятия помогают юным шахматистам с нуля освоить
+												правила
+												игры, научиться строить комбинации и разрабатывать тактику. </span><span>Занятия
+												ведут опытные
+												тренеры, которые умеют найти подход к каждому ребенку.</span><span>Мы создаём
+												комфортную
+												атмосферу для обучения, где дети не только учатся играть, но и раскрывают свой
+												потенциал, становятся увереннее и самостоятельнее.</span></p>
+										<a href class="more-btn button">
+											<svg class="more-btn__arr-2">
+												<use href="img/sprite.svg#arrow2"></use>
+											</svg>
+											<span class="more-btn__text">Подробнее</span>
+											<span class="more-btn__circle"></span>
+											<svg class="more-btn__arr-1">
+												<use href="img/sprite.svg#arrow1"></use>
+											</svg>
+										</a>
+									</div>
+								</div>
+								<div class="whom__item flex-row">
+									<div class="whom__img flex-fl_center" itemscope="" itemtype="http://schema.org/ImageObject">
+										<picture>
+											<img src="img/whom-adults-1.jpg" alt="Шахматы для взрослых" loading="lazy"
+												itemprop="contentUrl">
+										</picture>
+									</div>
+									<div class="whom__text-content flex-column">
+										<h3 class="whom__heading"><span>Шахматы для взрослых</span></h3>
+										<p class="whom__desc"><span>Наши занятия — это возможность освоить шахматы с
+												нуля или вывести игру на новый уровень. Мы предлагаем гибкий формат:
+												индивидуальные
+												уроки онлайн и оффлайн в удобное для вас время. Программа включает изучение
+												стратегии, анализ партий, развитие логики и тактического мышления. Наши тренеры
+												помогут подготовиться к соревнованиям, улучшить навыки игры или поддержать
+												увлечение
+												близких.</span></p>
+										<a href class="more-btn button">
+											<svg class="more-btn__arr-2">
+												<use href="img/sprite.svg#arrow2"></use>
+											</svg>
+											<span class="more-btn__text">Подробнее</span>
+											<span class="more-btn__circle"></span>
+											<svg class="more-btn__arr-1">
+												<use href="img/sprite.svg#arrow1"></use>
+											</svg>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="steps">
+				<div class="wrapper">
+					<div class="steps__block flex-fl_column-fl_center">
+						<div class="bg-shape bg-shape--01 filter-bg"></div>
+						<div class="bg-shape bg-shape--02 filter-bg"></div>
+						<h2 class="steps__title title">Как мы работаем?</h2>
+						<p class="steps__subtitle">Посмотрите пошаговый план работы с нами:</p>
+						<div class="steps__list flex-row">
+							<div class="steps__item flex-column">
+								<div class="steps__img flex-fl_center">
+									<span class="steps__number flex-fl_center">1</span>
+								</div>
+								<p class="steps__desc flex-fl_column-fl_center">
+									<span>Оставляете заявку или связываетесь по телефону</span>
+								</p>
+							</div>
+							<div class="steps__item flex-column">
+								<div class="steps__img flex-fl_center">
+									<span class="steps__number flex-fl_center">2</span>
+								</div>
+								<p class="steps__desc flex-fl_column-fl_center">
+									<span>Подбираем вам тренера</span>
+								</p>
+							</div>
+							<div class="steps__item flex-column">
+								<div class="steps__img flex-fl_center">
+									<span class="steps__number flex-fl_center">3</span>
+								</div>
+								<p class="steps__desc flex-fl_column-fl_center">
+									<span>Согласовываем расписание ваших шахматных мероприятий </span>
+								</p>
+							</div>
+							<div class="steps__item flex-column">
+								<div class="steps__img flex-fl_center">
+									<span class="steps__number flex-fl_center">4</span>
+								</div>
+								<p class="steps__desc flex-fl_column-fl_center">
+									<span>Приступаем к полноценному участию в клубе</span>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="main-coaches">
+				<div class="main-coaches__bg">
+					<div class="wrapper">
+						<div class="main-coaches__block flex-fl_column-fl_center">
+							<h2 class="main-coaches__title title">Наши тренеры</h2>
+							<div class="main-coaches__list flex-row">
+								<div class="main-coaches__item flex-column">
+									<div class="main-coaches__img flex-fl_center" itemscope=""
+										itemtype="http://schema.org/ImageObject">
+										<picture>
+											<img src="img/coaches-01.jpg" alt="Учитель 1" loading="lazy" itemprop="contentUrl">
+										</picture>
+									</div>
+									<h3 class="main-coaches__heading flex-fl_column-fl_center"><span>Шахматы для детей
+										</span><span>с Анной
+											Шеиной</span></h3>
+								</div>
+								<div class="main-coaches__item flex-column">
+									<div class="main-coaches__img flex-fl_center" itemscope=""
+										itemtype="http://schema.org/ImageObject">
+										<picture>
+											<img src="img/coaches-02.jpg" alt="Учитель 1" loading="lazy" itemprop="contentUrl">
+										</picture>
+									</div>
+									<h3 class="main-coaches__heading flex-fl_column-fl_center"><span>Профессиональная подготовка
+										</span><span>с Павлом
+											Анатольевичем
+											Шеиным</span></h3>
+								</div>
+								<div class="main-coaches__item flex-column">
+									<div class="main-coaches__img flex-fl_center" itemscope=""
+										itemtype="http://schema.org/ImageObject">
+										<picture>
+											<img src="img/coaches-02.jpg" alt="Учитель 1" loading="lazy" itemprop="contentUrl">
+										</picture>
+									</div>
+									<h3 class="main-coaches__heading flex-fl_column-fl_center"><span>Семейные турниры
+										</span><span>под
+											руководством
+										</span><span>Александра
+											Павловича Шеина</span></h3>
+								</div>
+								<div class="main-coaches__item flex-column">
+									<div class="main-coaches__img flex-fl_center" itemscope=""
+										itemtype="http://schema.org/ImageObject">
+										<picture>
+											<img src="img/coaches-02.jpg" alt="Учитель 1" loading="lazy" itemprop="contentUrl">
+										</picture>
+									</div>
+									<h3 class="main-coaches__heading flex-fl_column-fl_center"><span>Чуткое сопровождение
+										</span><span>групповых занятий
+											Ивана
+											Шеина</span></h3>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="main-form">
+				<div class="wrapper">
+					<div class="main-form__block flex-column">
+						<div class="bg-shape bg-shape--01 filter-bg"></div>
+						<div class="bg-shape bg-shape--02 filter-bg"></div>
+						<div class="main-form__content flex-fl_column-fl_center">
+							<h2 class="main-form__title title">Запишитесь на обучение</h2>
+							<p class="main-form__subtitle"><span>Оставьте заявку и мы свяжемся с вами</span></p>
+							<form class="form flex-fl_between" action="https://getform.io/f/adrgjqea" method="POST"
+								data-form-container>
+								<!-- add hidden Honeypot input to prevent spams -->
+								<input type="hidden" name="_gotcha" style="display:none !important">
+								<div class="form-field">
+									<input class="form-input tool-focus" tool-focus type="text" name="name"
+										placeholder="Ваше имя" required>
+									<div class="tooltip-form tooltip-name-error" name-error>
+										<span></span>
+										<span><svg>
+												<use href="/img/sprite.svg#attention" />
+											</svg></span>
+									</div>
+								</div>
+								<div class="form-field">
+									<input class="form-input phone-input tool-focus" tool-focus phone-mask type="tel" name="tel"
+										placeholder="Введите телефон" required>
+									<div class="tooltip-form tooltip-phone-error" phone-error>
+										<span></span>
+										<span><svg>
+												<use href="/img/sprite.svg#attention" />
+											</svg></span>
+									</div>
+								</div>
+								<div class="form-field">
+									<input class="form-input phone-input tool-focus" tool-focus phone-mask type="email"
+										name="email" placeholder="Введите телефон" required>
+									<div class="tooltip-form tooltip-phone-error" phone-error>
+										<span></span>
+										<span><svg>
+												<use href="/img/sprite.svg#attention" />
+											</svg></span>
+									</div>
+								</div>
+								<div class="form-field">
+									<div class="checkbox-area">
+										<input id="consent-checkbox" class="custom-checkbox" type="checkbox" name="policy"
+											value="yes" checkbox-input>
+										<label class="tool-focus" tool-focus for="consent-checkbox" tabindex="0">
+											<span>
+												<span>Даю согласие на обработку </span>
+												<a href="/privacy-policy" target="_blank"> персональных данных</a>
+											</span>
+										</label>
+										<div id="tooltip-consent-checkbox" class="tooltip-form tooltip-checkbox" checkbox-error>
+											<span>Вы должны согласиться с обработкой персональных данных</span>
+											<span><svg>
+													<use href="/img/sprite.svg#attention" />
+												</svg></span>
+										</div>
+									</div>
+								</div>
+								<button class="form-btn button" type="submit" data-btn-form-submit><span>Отправить
+										заявку</span></button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<section class="contacts">
+				<div class="contacts__bg">
+					<div class="wrapper">
+						<div class="contacts__block flex-row">
+							<div class="contacts__left flex-column">
+								<div class="contacts__block-logo flex-row">
+									<a href="/">
+										<img src="img/logo.png" alt="Schein Chess Club">
+									</a>
+								</div>
+								<ul class="contacts__links-list flex-column">
+									<li class="contacts__links-item">
+										<a href="/">Главная</a>
+									</li>
+									<li class="contacts__links-item">
+										<a href="/about">О клубе Шеиных</a>
+									</li>
+									<li class="contacts__links-item">
+										<a href="/programs">Программы клуба</a>
+									</li>
+									<li class="contacts__links-item">
+										<a href="/coaches">Наши тренеры</a>
+									</li>
+									<li class="contacts__links-item">
+										<a href="/tournaments">Турниры</a>
+									</li>
+								</ul>
+							</div>
+							<div class="contacts__right flex-column">
+								<h2 class="contacts__title title">Контакты</h2>
+								<button type="button" class="callback-btn button" popup-open="popup-callback">
+									<span>Записаться на занятие</span>
+								</button>
+								<div class="contact flex-row">
+									<div class="contact__mail flex-column">
+										<p class="contact__txt">E-mail: </p>
+										<a class="contact__link callback-tel button" href="mailto:mail@mail.ru">
+											<span>mail@mail.ru</span>
+										</a>
+									</div>
+									<div class="contact__tel flex-column">
+										<p class="contact__txt">Телефон:</p>
+										<a class="contact__link callback-tel button" href="tel:+79990000000">
+											<span>+7 (999) 000-00-00</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="wrapper">
+				<div class="footer__block flex-fl_between">
+					<p class="footer__copyright">&copy; Schein Chess Club, 2025</p>
+					<a class="footer__privacy" href="/privacy-policy" rel="nofollow" target="_blank">Политика
+						конфиденциальности</a>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<!-- <script src="js/libs.min.js"></script> -->
+	<!-- <script src="js/script.min.js"></script> -->
+	<script src="js/script.js"></script>
+</body>
+
+</html>

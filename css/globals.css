@@ -1,0 +1,324 @@
+/*--------------------ANIMATION-------------------*/
+@keyframes scale {
+  0% {
+    opacity: 0;
+    transform: scale(.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+/*--------------------BASIC-STYLE-------------------*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.25;
+  color: var(--color-text-default);  
+}
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.15;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+picture {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+}
+a, button {
+	transition: var(--transition-all);
+}
+:focus {
+  outline: -webkit-focus-ring-color none;
+}
+img, button {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+body {
+	overflow-x: hidden;
+	overflow-y: scroll;
+  background: var(--color-bg-main);
+}
+.body-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  position: relative;
+}
+.main-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+* {
+    scrollbar-width: thin; 
+    scrollbar-color: var(--color-scroll-thumb) var(--color-scroll-track);
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar:horizontal {
+    height: 10px;
+}
+::-webkit-scrollbar-track {
+    background: var(--color-scroll-track);
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--color-scroll-thumb);
+}
+/*--------------------FLEX-STYLE-------------------*/
+[class*="flex"] {
+  display: flex;
+}
+.flex-row {
+	flex-direction: row;
+}
+.flex-column {
+	flex-direction: column;
+}
+[class*="-fl_row"] {
+  flex-direction: row;
+}
+[class*="-fl_column"] {
+  flex-direction: column;
+}
+[class*="-fl_center"] {
+  align-items: center;
+  justify-content: center;
+}
+[class*="-fl_main-cnt"] {
+  justify-content: center;
+}
+[class*="-fl_cross-cnt"] {
+  align-items: center;
+}
+[class*="-fl_main-end"] {
+  justify-content: flex-end;
+}
+[class*="-fl_cross-end"] {
+  align-items: flex-end;
+}
+[class*="-fl_between"] {
+  justify-content: space-between;
+}
+[class*="-fl_around"] {
+  justify-content: space-around;
+}
+[class*="-fl_5"] {
+  flex-basis: 5%;
+}
+[class*="-fl_10"] {
+  flex-basis: 10%;
+}
+[class*="-fl_15"] {
+  flex-basis: 15%;
+}
+[class*="-fl_20"] {
+  flex-basis: 20%;
+}
+[class*="-fl_25"] {
+  flex-basis: 25%;
+}
+[class*="-fl_30"] {
+  flex-basis: 30%;
+}
+[class*="-fl_35"] {
+  flex-basis: 35%;
+}
+[class*="-fl_40"] {
+  flex-basis: 40%;
+}
+[class*="-fl_45"] {
+  flex-basis: 45%;
+}
+[class*="-fl_50"] {
+  flex-basis: 50%;
+}
+[class*="-fl_55"] {
+  flex-basis: 55%;
+}
+[class*="-fl_60"] {
+  flex-basis: 60%;
+}
+[class*="-fl_65"] {
+  flex-basis: 65%;
+}
+[class*="-fl_70"] {
+  flex-basis: 70%;
+}
+[class*="-fl_75"] {
+  flex-basis: 75%;
+}
+[class*="-fl_80"] {
+  flex-basis: 80%;
+}
+[class*="-fl_85"] {
+  flex-basis: 85%;
+}
+[class*="-fl_80"] {
+  flex-basis: 80%;
+}
+[class*="-fl_95"] {
+  flex-basis: 95%;
+}
+[class*="-fl_100"] {
+  flex-basis: 100%;
+}
+
+/*--------------------BUTTON-STYLE-------------------*/
+input, button, textarea, select {
+  font: inherit;
+}
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+}
+button:active, button:focus {
+  outline: none !important;
+  background-color: none !important;
+  border: none;
+}
+input:active, input:focus, textarea:active, textarea:focus {
+  outline: none;
+  border: none;
+}
+button::-moz-focus-inner {
+  border: 0;
+}
+button span,
+a span {
+  color: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  transition: var(--transition-all);
+}
+h1 span,
+h2 span,
+h3 span,
+h4 span,
+h5 span,
+h6 span,
+p span {
+  color: inherit;
+  font-size: inherit;
+  font-family: inherit;
+}
+/*--------------------FORM-STYLE-------------------*/
+::-webkit-input-placeholder {
+	font-weight: 300;
+	opacity: 0.9;
+}
+::-moz-placeholder {
+	font-weight: 300;
+	opacity: 0.9;
+}
+:focus::-webkit-input-placeholder {
+	opacity: 0;
+}
+:focus::-moz-placeholder {
+	opacity: 0;
+}
+.form-field {
+	position: relative;
+}
+/* .form-field input:not([type="checkbox"]),
+.form-field textarea {
+	width: 100%;	
+	background: transparent;
+	border: none;
+	color: var(--white);
+	-webkit-text-fill-color: var(--white);
+	resize: none;
+}
+.checkbox-area {
+	position: relative;
+}
+.checkbox-area label {
+	cursor: pointer;
+	display: inline-block;
+}
+.checkbox-area input[type="checkbox"] {
+	display: none;
+}
+.checkbox-area * {
+	color: var(--white);
+}
+.custom-checkbox + label::before {
+	content: '';
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	border: none;
+	background: transparent;
+	transition: var(--transition-all);
+	outline: 1px solid var(--white);
+}
+.custom-checkbox + label::after {
+	content: '';
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23F4F4FF' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	transform: scale(0);
+}
+.checkbox-area:hover label::before {
+	outline: 1px solid var(--light-violet);
+}
+.custom-checkbox:checked + label::after {
+	transform: scale(1);
+	color: var(--slight-white);
+}
+.checkbox-area a {
+	border-bottom: 1px solid var(--slight-white);
+} */
+/*-------------------TOOLTIP----------------------*/
+.tooltip-form,
+.tooltip-visibile {
+	display: none;
+}
+/* .checkbox-area.form-error-border .custom-checkbox + label::before {
+	border: 2px solid var(--orange);
+}
+.checkbox-area.form-error-border label {
+	border-bottom: 2px solid var(--orange);
+}
+.checkbox-area.form-error-border a {
+	border-bottom : none;
+}
+.form-field input:not([type="checkbox"]).form-error-border,
+.checkbox-area.form-error-border .custom-checkbox + label::before,
+.checkbox-area.form-error-border a,
+.checkbox-area.form-error-border label {
+	transition: var(--transition-all);
+} */

@@ -1,0 +1,38 @@
+@import url('variables.css');
+@import url('variables-1920.css');
+@import url('font.css');
+@import url('globals.css');
+@import url('basic.css');
+
+@import url('mobile.css') (max-width: 480px);
+@import url('tablet.css') (min-width: 481px) and (max-width: 1023.98px);
+@import url('active.css') (max-width: 1023.98px);
+@import url('hover.css') (min-width: 1024px);
+@import url('laptop-1920.css') (min-width: 1024px) and (max-width: 1919.98px);
+@import url('desktop-1920.css') (min-width: 1920px);
+
+
+/* body {
+	font-family: Inter;
+	font-size: 25px;
+	box-sizing: border-box;	
+}
+
+main {
+	background: url('../img/Layer.png') 0 0 no-repeat;
+	padding-left: 20px;
+}
+
+span {
+	font-size: 20px;
+	@media (max-width: 767px) {
+		font-size: 15px;
+	}
+}
+
+div {
+	font-size: 30px;
+	@media (max-width: 767px) {
+		font-size: 20px;
+	}
+} */
