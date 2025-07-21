@@ -1045,12 +1045,30 @@ object {
 	background: url('../img/chess-king-rook.png') center center/cover no-repeat;
 }
 .contact__mail {
-	margin: 0 20px;
+	margin-bottom: 10px;
 }
+.contact__mail,
+.contact__tel {
+	align-items: end;
+	margin-left: 37px;
+	margin-right: 20px;
+}
+.contact__link {
+	/* padding: 2px; */
+}
+.contact__link span {
+	padding: 0;
+}
+.contact__link span::after {
+	top: 108%;
+} 
 .contact__link,
 .contact__link span  {	
 	font-weight: 700;
 	font-size: 22px;
+}
+.contact__txt {
+	margin: 0 20px 0 0;
 }
 .contact__txt,
 .contact__txt span {	
@@ -1061,6 +1079,7 @@ object {
 .contact__txt span,
 .contact__link,
 .contact__link span {
+	/* padding: 0; */
 	color: #232536;	
 }
 .contact__link:hover span,
